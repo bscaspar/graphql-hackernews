@@ -1,0 +1,6 @@
+#endpoint: ""
+endpoint: https://us1.prisma.sh/brady-caspar-38b397/database/dev
+
+datamodel: datamodel.graphql
+
+secret: mysecret123
