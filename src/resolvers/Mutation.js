@@ -1,5 +1,5 @@
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtken");
+const jwt = require("jsonwebtoken");
 const { APP_SECRET, getUserId } = require("../utils");
 
 async function signup(parent, args, context, info) {
@@ -48,7 +48,7 @@ function post(parent, args, context, info) {
       data: {
         url: args.url,
         description: args.description,
-        postedBy: { connedct: { id: userId } }
+        postedBy: { connect: { id: userId } }
       }
     },
     info
